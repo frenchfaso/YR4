@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YR4 Impact Probability - DON'T PANIC!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #33ff33;
+            font-family: 'Space Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .guide-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #33ff33;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(51, 255, 51, 0.2);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .dont-panic {
+            font-size: 3em;
+            color: #ffff00;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        .probability {
+            font-size: 6em;
+            margin: 40px 0;
+            text-shadow: 0 0 10px #33ff33;
+        }
+
+        .news-feed {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            border-top: 1px solid #33ff33;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .footer {
+            margin-top: auto;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <h1>🌍 Asteroid 2024 YR4 Probability Tracker</h1>
+        <div class="dont-panic">DON'T PANIC!</div>
+        
+        <div class="probability" id="impact-probability">
+            0.0042%
+        </div>
+
+        <p>Probability of Earth-shattering kaboom by December 2032</p>
+
+        <div class="news-feed">
+            <h2>📡 Latest Sub-Etha Updates</h2>
+            <div id="news-container">
+                Loading latest news from sector ZZ9 Plural Z Alpha...
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>🚀 Share and Enjoy! | Powered by the Infinite Improbability Drive</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
