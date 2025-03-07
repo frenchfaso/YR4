@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) throw new Error('News network response was not ok');
             
             const data = await response.json();
-            return data.results.map(article => ({
-                title: article.title,
-                url: article.url
+            return data.map(article => ({
+                title: article.Title,
+                url: article.URL
             }));
         } catch (error) {
             console.error("Error fetching space news:", error);
