@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const BASE_PROBABILITY = 0.0042;
-    const NEWS_API_URL = 'https://api.spaceflightnewsapi.net/v4/articles';
+    const SEARCH_API_URL = 'https://frenchfaso.pythonanywhere.com/search';
 
     // Probability calculation with Infinite Improbability Drive
     function updateProbability() {
@@ -22,12 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fetch space news articles
     async function getSpaceNews() {
         const params = new URLSearchParams({
-            search: 'asteroid',
-            limit: 3
+            query: 'latest news on asteroids',
         });
 
         try {
-            const response = await fetch(`${NEWS_API_URL}?${params}`);
+            const response = await fetch(`${SEARCH_API_URL}?${params}`);
             if (!response.ok) throw new Error('News network response was not ok');
             
             const data = await response.json();
